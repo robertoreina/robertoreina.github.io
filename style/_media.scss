@@ -1,0 +1,50 @@
+@media screen and (min-width: 750px) {
+    
+    body {
+        margin: 0;
+    }
+
+    header {
+        max-height: 80px;
+    }
+
+    #logo_header{
+        margin-top: 22px;
+        margin-left: 8vw;
+    }
+
+    #main_burger {
+        display: none;
+    }
+    .lista_nav{
+        position: absolute;
+        display: inline-block;
+        top: 20px;
+        right: 50px;
+        background-color: transparent;
+    }
+
+    .lista_nav a {
+        color: #060A24;
+        font-weight: 900;
+        margin-inline-end: 2vw; 
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    #titulo_page {
+        max-width: 722px;
+        font-size: 64px;
+        margin-left: 15.38vw;   
+        display: inline-block;
+        margin-top: 100px;
+    }
+
+    br {
+        display: none;
+    }
+
+ }
+
