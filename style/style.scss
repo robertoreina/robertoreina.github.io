@@ -1,72 +1,12 @@
-@import "./variables";
-@import "./navegacion";
+@import "./generic";
+@import "./header-navbar";
+@import "./seccion-principal";
 @import "./fondos";
-@import "./episodios";
+@import "./seccion-episodios";
+@import "./seccion-de-donde";
+@import "./seccion-entrevistas";
+@import "./seccion-topicos";
+@import "./seccion-novedades";
+@import "./footer";
 @import "./media";
 
-
-* {
-    box-sizing: border-box;
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-body{
-    margin: 0;
-}
-
-html {
-    font-size: 12px;
-
-}
-
-.titulos {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    margin-left: 16px;
-    max-width: 288px;
-    max-height: 100px;
-    width: 90vw;
-    display: inline-block;
-    line-height: 42px;
-}
-
-#titulo_page{
-    color: #060A24;
-}
-
-%estilo_parrafos {
-    font-size: 1.09rem;
-    text-align: justify;
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-    line-height: 22px;
-    color: #060A24;
-    letter-spacing: 0;
-    margin-top: 0;
-    font-weight: 300;
-}
-.parrafos {
-    @extend %estilo_parrafos;
-}
- 
-
-%estilo_botones{
-    background-color: #00F3BB;
-    color: #060A24;
-    display: inline-block;
-    width: 90vw;
-    height: 48px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 1.08rem;
-    padding-bottom: 1.08rem;
-    margin-left: 5vw;
-    margin-right: 10vw;
-    margin-bottom:  5vh;
-}
-#boton_conoce_mas{
-    @extend %estilo_botones;
-}

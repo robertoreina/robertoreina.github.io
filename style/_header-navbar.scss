@@ -1,5 +1,9 @@
 header {
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100vw;
 }
 
 #logo_header {
@@ -20,10 +24,10 @@ header {
 
 
 .lista_nav {
-    max-width: auto;
+    width: 100vw;;
     display: none;
     background-color: #0000EC;
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
 
     li {
@@ -41,11 +45,22 @@ header {
     }
 }
 
-#button_burger {
+#button_burger, .fa-times {
     display: none;
 }
 
-#button_burger:checked ~ .lista_nav {
-    display: block;
+#button_burger:checked {
+    & ~ .lista_nav {
+        display: block;
+    }
+
+    & ~ #main_burger .fa-bars{
+        display: none;
+    }
+    & ~ #main_burger .fa-times{
+        display: block;
+    }
 }
+
+
 

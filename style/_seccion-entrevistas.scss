@@ -1,0 +1,21 @@
+
+#seccion-entrevistas{
+    margin-top: 7vh;    
+
+    .contenedor-imagenes{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        align-content: center;
+        margin-top: 5vh;
+        
+        .imagenes-entrevistas{
+            width: 100%;
+        }
+    }
+
+    #titulo-entrevistas{
+        margin-left: 3.4vw;
+        margin-right: 3.4vw;
+    }
+}

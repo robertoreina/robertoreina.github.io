@@ -1,0 +1,26 @@
+#seccion-novedades{
+    @extend %secciones;
+    position: relative;
+    padding-bottom: 20vh;
+    margin-top: 10vh;
+}
+
+.contenedor-novedades{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+    // align-content: space-between;
+    
+    #titulo-novedades{
+        color: #FFFFFF;
+        margin-bottom: 8vh;
+    }
+    
+    #boton-novedades{
+        @include estilo-botones;
+        max-width: 345px;
+    }
+}
+
+

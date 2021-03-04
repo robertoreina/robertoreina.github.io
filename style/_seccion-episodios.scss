@@ -1,0 +1,33 @@
+
+#seccion_episodios {
+    @extend %secciones;
+    position: relative;
+}
+
+.contenedor_episodios{
+    width: 100%;
+    height: auto;
+    display: flex;  
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+
+    iframe{
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        margin-bottom: 11px;
+
+        &:nth-last-of-type(1){
+            margin-bottom: 100px;
+        }
+    }
+}
+
+#titulo_episodios{
+    color: #FFFFFF;
+    margin-bottom: 6.56vw;
+}
+
+

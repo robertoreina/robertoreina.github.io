@@ -1,0 +1,32 @@
+footer{
+    @extend %secciones;
+    position: relative;
+    background-color: white;
+    padding: 0 8vw 2vh 8vw;
+    top: -54px;
+    min-height: 80px;
+
+    .contenedor-footer{
+        display: flex;
+        flex-flow: row wrap;
+        min-height: 80px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .contenedor-redes{
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contenedor-redes .enlaces-redes{
+    text-decoration: none;
+    color: initial;
+
+    &:hover{
+        transform: translateY(-3px);
+        color: blue;
+    }
+}

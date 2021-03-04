@@ -1,50 +1,151 @@
-@media screen and (min-width: 750px) {
-    
-    body {
-        margin: 0;
+// Media responsive  tablet y desk
+@media screen and (min-width: 768px) {
+    //footer
+    footer .contenedor-footer {
+        justify-content: space-between;
+    }
+}
+
+// Media responsive solo desk
+@media screen and (min-width: 1024px) {
+    //Estilos generales
+    html {
+        font-size: 16px;
     }
 
+    .parrafos {
+        line-height: 24px;
+    }
+
+    .titulos-secciones {
+        font-size: 48px;
+    }
+
+    //Seccion Header
     header {
         max-height: 80px;
     }
 
-    #logo_header{
+    #logo_header {
         margin-top: 22px;
         margin-left: 8vw;
+        width: 36px;
+        height: auto;
     }
 
     #main_burger {
         display: none;
     }
-    .lista_nav{
-        position: absolute;
-        display: inline-block;
-        top: 20px;
-        right: 50px;
+
+    // Navbar
+    .lista_nav {
+        display: block;
+        margin-top: 26px;
+        width: auto;
         background-color: transparent;
     }
 
     .lista_nav a {
-        color: #060A24;
-        font-weight: 900;
-        margin-inline-end: 2vw; 
+        color: #060a24;
+        margin-inline-end: 2vw;
     }
 
-    li {
+    .lista_nav li {
         display: inline-block;
     }
 
-    #titulo_page {
-        max-width: 722px;
+    li a:hover {
+        color: #00f3bb;
+        text-decoration: line-through;
+    }
+
+    li a:active {
+        color: #060a24 56%;
+        text-decoration: line-through;
+    }
+
+    //Seccion titulo principal
+    .seccion-titulo-principal {
+        padding-left: 200px;
+    }
+    #titulo_page,
+    #titulo_page span {
+        max-width: 75vw;
         font-size: 64px;
-        margin-left: 15.38vw;   
-        display: inline-block;
+        line-height: 1em;
         margin-top: 100px;
+        margin-bottom: 10px;
+
+        br {
+            display: none;
+        }
     }
 
-    br {
-        display: none;
+    #parrafo-principal {
+        max-width: 628px;
     }
 
- }
+    #boton_conoce_mas {
+        max-width: 226px;
+    }
 
+    //seccion Episodios
+    .contenedor_episodios {
+        height: auto;
+
+        iframe {
+            max-width: 584px;
+            width: 40.56vw;
+            margin-bottom: 5vw;
+        }
+    }
+
+    #titulo_episodios {
+        margin-left: 13.86vw;
+    }
+
+    // Seccion de Donde Venimos
+    #seccion-de-donde {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+    }
+    .contenido-de-donde {
+        top: initial;
+    }
+    .contenedor-phone .phone {
+        top: -220px;
+    }
+    #titulo-de-donde {
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+
+    // seccion entrevista
+    #seccion-entrevistas {
+        #titulo-entrevistas {
+            margin-left: 13.86vw;
+        }
+
+        .contenedor-imagenes {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    //seccion Topicos
+    #titulo-topicos {
+        margin-left: 13.86vw;
+    }
+}
+
+// Media responsive solo Tablet
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #seccion-entrevistas .contenedor-imagenes {
+        grid-template-columns: 1fr 1fr;
+
+        .imagenes-entrevistas {
+            width: 50vw;
+            height: auto;
+        }
+    }
+}

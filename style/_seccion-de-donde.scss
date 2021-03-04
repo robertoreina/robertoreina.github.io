@@ -1,0 +1,35 @@
+#seccion-de-donde{
+    @extend %secciones;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenido-de-donde{   
+    max-height: 400PX;
+
+     #parrafo-de-donde{
+         max-width: 464px;
+    }
+}
+
+.contenedor-phone{
+    display: block;
+    max-height:  130vw;
+
+    .phone{
+        width: 100vw;
+        height: 162vw;
+        max-width: 457.6px;
+        max-height: 700px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -120px;
+        left: 0; 
+    }
+}
+
+
+
+

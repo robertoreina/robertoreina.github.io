@@ -1,0 +1,54 @@
+
+$blanco: #FFFFFF;
+$azul: #0000EC 100%;
+$azul_gradient: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+$margen_left_tit: 200px;
+
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body{
+    margin: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+%estilo-titulos-secciones{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+%secciones {
+    width: 100vw;
+    margin: 0;
+    padding:  10vw 3.4vw;
+}
+
+
+@mixin estilo-botones {
+    background-color: #00F3BB;
+    display: block;
+    color: #060A24;
+    width: 90vw;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 48px
+}
+
+#boton_conoce_mas:hover, #boton-novedades:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+}

@@ -1,0 +1,35 @@
+
+ #seccion-topicos{
+    margin-top: 7vh;    
+ }
+
+.contenedor-topicos{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5vh 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+
+
+     .contenido-topico{
+        display: flex; 
+        flex-flow: column wrap;
+        max-width: 260px;
+        padding: 4vh 0;
+     }
+
+     .contenido-topico strong{
+         max-width: 288px;
+         font-size: 24px;
+         text-align: center;
+         margin-top: 1vh;
+     }
+}
+
+#titulo-topicos{
+    margin-left: 3.4vw;
+}
+
+
+  

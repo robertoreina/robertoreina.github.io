@@ -1,0 +1,41 @@
+.seccion-titulo-principal{
+    width: 100vw;
+    margin: 0;
+    padding: 8vw 5vw;
+}
+
+.titulos-secciones{
+    @extend %estilo-titulos-secciones;
+}
+
+#titulo_page, #titulo_page span{
+    @extend %estilo-titulos-secciones;
+    color: #060A24;
+    margin-bottom: 16px;
+}
+
+#titulo_page span{
+    text-decoration: line-through;
+}
+
+.parrafos  {
+    font-size: 1rem;
+    text-align: justify;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    line-height: 22px;
+    color: #060A24;
+    letter-spacing: 0;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+#parrafo-principal{
+    margin-bottom: 4.16vh;
+}
+
+#boton_conoce_mas{
+    @include estilo-botones;
+}
+
