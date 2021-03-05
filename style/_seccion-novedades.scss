@@ -1,8 +1,13 @@
 #seccion-novedades{
     @extend %secciones;
     position: relative;
-    padding-bottom: 20vh;
-    margin-top: 10vh;
+    padding-bottom: 0;
+    margin-top: 2vh;
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-novedades{
@@ -10,7 +15,6 @@
     flex-flow: column wrap;
     text-align: center;
     align-items: center;
-    // align-content: space-between;
     
     #titulo-novedades{
         color: #FFFFFF;

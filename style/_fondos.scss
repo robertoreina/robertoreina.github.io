@@ -6,17 +6,13 @@
     width: 100vw;
     position: absolute;
     top: 0;
-     left: 0;
+    left: 0;
     z-index: -1;
+    transform: skewY(-6deg);
 
 }
 
-// seccion episodios
-#fondo_blue_episodios{
-    transform: skewY(-6deg);
- } 
-
 // seccion novedades
  #fondo_blue_novedades{
-    transform: skewY(-3deg);
- } 
+    transform-origin: bottom right;
+} 
