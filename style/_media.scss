@@ -46,7 +46,7 @@
     }
 
     .lista_nav a {
-        color: #060a24;
+        color: #060a24; 
     }
 
     .lista_nav li {
@@ -120,6 +120,10 @@
     #titulo-de-donde {
         margin-left: 0;
         margin-bottom: 24px;
+    }
+
+    #parrafo-de-donde{
+        max-width: 464px;
     }
 
     // seccion entrevista

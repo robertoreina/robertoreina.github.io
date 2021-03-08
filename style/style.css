@@ -132,7 +132,6 @@ header {
 
 .parrafos {
   font-size: 1rem;
-  text-align: justify;
   margin-left: 5vw;
   margin-right: 5vw;
   line-height: 22px;
@@ -230,11 +229,7 @@ header {
 }
 
 .contenido-de-donde {
-  max-height: 400PX;
-}
-
-.contenido-de-donde #parrafo-de-donde {
-  max-width: 464px;
+  max-height: 464px;
 }
 
 .contenedor-phone {
@@ -519,6 +514,9 @@ footer .contenedor-redes {
   #titulo-de-donde {
     margin-left: 0;
     margin-bottom: 24px;
+  }
+  #parrafo-de-donde {
+    max-width: 464px;
   }
   #seccion-entrevistas #titulo-entrevistas {
     margin-left: 13.86vw;
