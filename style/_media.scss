@@ -22,12 +22,9 @@
     }
 
     //Seccion Header
-    header {
-        max-height: 80px;
-    }
 
     #logo_header {
-        margin-top: 22px;
+        margin-top: 1vh;
         margin-left: 8vw;
         width: 36px;
         height: auto;
@@ -39,15 +36,17 @@
 
     // Navbar
     .lista_nav {
+        position: static;
+        opacity: 1;
         display: block;
         margin-top: 26px;
         width: auto;
         background-color: transparent;
+        margin-right: 2vw;;
     }
 
     .lista_nav a {
         color: #060a24;
-        margin-inline-end: 2vw;
     }
 
     .lista_nav li {
@@ -60,13 +59,14 @@
     }
 
     li a:active {
-        color: #060a24 56%;
+        color: #060a2457;
         text-decoration: line-through;
     }
 
     //Seccion titulo principal
     .seccion-titulo-principal {
         padding-left: 200px;
+        padding-top: 16vh;
     }
     #titulo_page,
     #titulo_page span {
@@ -101,7 +101,7 @@
     }
 
     #titulo_episodios {
-        margin-left: 13.86vw;
+        margin-left: 10.86vw;
     }
 
     // Seccion de Donde Venimos
@@ -109,6 +109,7 @@
         flex-wrap: nowrap;
         justify-content: space-evenly;
         padding-bottom: 0;
+        height: 88vh;
     }
     .contenido-de-donde {
         top: initial;

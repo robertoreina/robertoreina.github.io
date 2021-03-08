@@ -1,15 +1,18 @@
 header {
-    position: relative;
+    background-color: white;
+    z-index: 5;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100vw;
+    min-height: 44px;
+    max-height: 80px;
 }
 
 #logo_header {
     width: 24px;
     height: auto;
-    margin-top: 3.13vw;
+    margin-top: 1vh;
     margin-left: 5vw;
 }
 
@@ -25,10 +28,15 @@ header {
 
 .lista_nav {
     width: 100vw;;
-    display: none;
+    display: block;
     background-color: #0000EC;
     margin-top: 10px;
     padding: 0;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    opacity: 0;
+    // z-index: -;
 
     li {
         list-style: none;  
@@ -51,7 +59,12 @@ header {
 
 #button_burger:checked {
     & ~ .lista_nav {
-        display: block;
+        position: relative;
+        //animacion del nav
+        transition: transform 0.3s ease, opacity 1.5s;
+        transform: translateY(100vh);
+        opacity: 1;
+        // display: block;
     }
 
     & ~ #main_burger .fa-bars{
