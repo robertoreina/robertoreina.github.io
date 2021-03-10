@@ -1,8 +1,17 @@
 // Media responsive  tablet y desk
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
     //footer
     footer .contenedor-footer {
         justify-content: space-between;
+    }
+
+    //seccion de donde vinimos
+    .contenedor-phone {
+        height: 590px;
+
+        .phone {
+            top: -220px;
+        }
     }
 }
 
@@ -109,14 +118,12 @@
         flex-wrap: nowrap;
         justify-content: space-evenly;
         padding-bottom: 0;
-        height: 88vh;
     }
+
     .contenido-de-donde {
         top: initial;
     }
-    .contenedor-phone .phone {
-        top: -220px;
-    }
+
     #titulo-de-donde {
         margin-left: 0;
         margin-bottom: 24px;
@@ -145,6 +152,7 @@
 
 // Media responsive solo Tablet
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     #seccion-entrevistas .contenedor-imagenes {
         grid-template-columns: 1fr 1fr;
 

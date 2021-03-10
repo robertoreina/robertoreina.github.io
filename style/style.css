@@ -232,21 +232,18 @@ header {
   max-height: 464px;
 }
 
-.contenedor-phone {
-  display: block;
-  max-height: 130vw;
-}
-
 .contenedor-phone .phone {
   width: 100vw;
-  height: 162vw;
   max-width: 457.6px;
-  max-height: 700px;
   margin: 0;
   padding: 0;
   position: relative;
   top: -120px;
   left: 0;
+}
+
+#parrafo-de-donde {
+  margin-top: 1rem;
 }
 
 #seccion-entrevistas {
@@ -414,11 +411,17 @@ footer .contenedor-redes {
   color: blue;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   footer .contenedor-footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .contenedor-phone {
+    height: 590px;
+  }
+  .contenedor-phone .phone {
+    top: -220px;
   }
 }
 
@@ -503,13 +506,9 @@ footer .contenedor-redes {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding-bottom: 0;
-    height: 88vh;
   }
   .contenido-de-donde {
     top: initial;
-  }
-  .contenedor-phone .phone {
-    top: -220px;
   }
   #titulo-de-donde {
     margin-left: 0;
