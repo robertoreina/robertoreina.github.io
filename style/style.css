@@ -455,6 +455,8 @@ footer .contenedor-redes {
     width: auto;
     background-color: transparent;
     margin-right: 2vw;
+    -webkit-animation: none;
+            animation: none;
   }
   .lista_nav a {
     color: #060a24;
