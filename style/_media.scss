@@ -1,8 +1,51 @@
 // Media responsive  tablet y desk
 @media screen and (min-width: 760px) {
+     //Seccion Header
+     #logo_header {
+        margin-top: 26px;
+        margin-left: 8vw;
+        width: 36px;
+        height: 36px;
+    }
+
+    #boton_conoce_mas {
+        max-width: 226px;
+    }
+  
     //footer
     footer .contenedor-footer {
         justify-content: space-between;
+    }
+
+    // Navbar
+    #main_burger {
+        display: none;
+    }
+    
+    .lista_nav {
+        display: block;
+        margin-top: 26px;
+        width: auto;
+        background-color: transparent;
+        margin-right: 2vw;;
+    }
+
+    .lista_nav a {
+        color: #060a24; 
+    }
+
+    .lista_nav li {
+        display: inline-block;
+    }
+
+    li a:hover {
+        color: #00f3bb;
+        text-decoration: line-through;
+    }
+
+    li a:active {
+        color: #060a2457;
+        text-decoration: line-through;
     }
 
     //seccion de donde vinimos
@@ -30,53 +73,12 @@
         font-size: 48px;
     }
 
-    //Seccion Header
-
-    #logo_header {
-        margin-top: 1vh;
-        margin-left: 8vw;
-        width: 36px;
-        height: auto;
-    }
-
-    #main_burger {
-        display: none;
-    }
-
-    // Navbar
-    .lista_nav {
-        position: static;
-        opacity: 1;
-        display: block;
-        margin-top: 26px;
-        width: auto;
-        background-color: transparent;
-        margin-right: 2vw;;
-    }
-
-    .lista_nav a {
-        color: #060a24; 
-    }
-
-    .lista_nav li {
-        display: inline-block;
-    }
-
-    li a:hover {
-        color: #00f3bb;
-        text-decoration: line-through;
-    }
-
-    li a:active {
-        color: #060a2457;
-        text-decoration: line-through;
-    }
-
     //Seccion titulo principal
     .seccion-titulo-principal {
         padding-left: 200px;
         padding-top: 16vh;
     }
+    
     #titulo_page,
     #titulo_page span {
         max-width: 75vw;
@@ -92,10 +94,6 @@
 
     #parrafo-principal {
         max-width: 628px;
-    }
-
-    #boton_conoce_mas {
-        max-width: 226px;
     }
 
     //seccion Episodios

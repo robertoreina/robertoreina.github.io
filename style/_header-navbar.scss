@@ -5,15 +5,17 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100vw;
+    height: 13.72vw;
     min-height: 44px;
     max-height: 80px;
 }
 
 #logo_header {
     width: 24px;
-    height: auto;
-    margin-top: 1vh;
-    margin-left: 5vw;
+    height: 24px;
+    margin-top: 1.97vh;;
+    margin-left: 5.9vw;
+    
 }
 
 #main_burger {
@@ -28,15 +30,25 @@ header {
 
 .lista_nav {
     width: 100vw;;
-    display: block;
+    display: none;
     background-color: #0000EC;
     margin-top: 10px;
     padding: 0;
-    position: absolute;
-    top: -100vh;
-    left: 0;
-    opacity: 0;
-    // z-index: -;
+    position: relative;
+    animation-name: animaNav; 
+    animation-duration: 1s;
+    animation-timing-function: ease;
+
+    @keyframes animaNav {
+        from {
+          opacity: 0;
+          transform: translateY(-50%);
+        }
+        to {
+          opacity: 1;
+        //   transform: translateY(1%);
+        }
+      }
 
     li {
         list-style: none;  
@@ -59,12 +71,7 @@ header {
 
 #button_burger:checked {
     & ~ .lista_nav {
-        position: relative;
-        //animacion del nav
-        transition: transform 0.3s ease, opacity 1.5s;
-        transform: translateY(100vh);
-        opacity: 1;
-        // display: block;
+        display: block;
     }
 
     & ~ #main_burger .fa-bars{
